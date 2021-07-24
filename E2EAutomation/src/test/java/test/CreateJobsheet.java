@@ -21,20 +21,24 @@ public class CreateJobsheet extends baseClass{
 		driver=IntializeDriver();
 		log.info("Driver is Initialized");
 		driver.get(prop.getProperty("url"));
+		System.out.println(prop.getProperty("username"));
 	}
 	
 	@Test
 	public void createJobsheet() {
 		LoginPage l=new LoginPage(driver);
 		l.headerFrame();
-		l.getUserName().sendKeys("J8Y4C64");
-		l.getPassword().sendKeys("qa123");
+		System.out.println(prop.getProperty("username"));
+		l.getUserName().sendKeys(prop.getProperty("username"));
+		l.getPassword().sendKeys(prop.getProperty("password"));
 		l.getLogin().click();
 		
 		HomePage h=new HomePage(driver);
 		log.info("Logged in");
 		h.switchVmain();
 		//h.createJobsheet().click();
+		
+	
 		
 	}
 	
