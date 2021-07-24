@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-16T10:50:29Z" name="Suite" finished-at="2021-07-16T10:50:52Z" duration-ms="23204">
+  <suite started-at="2021-07-24T05:58:03Z" name="Default suite" finished-at="2021-07-24T05:58:26Z" duration-ms="23162">
     <groups>
     </groups>
-    <test started-at="2021-07-16T10:50:29Z" name="Test" finished-at="2021-07-16T10:50:52Z" duration-ms="23204">
+    <test started-at="2021-07-24T05:58:03Z" name="Default test" finished-at="2021-07-24T05:58:26Z" duration-ms="23162">
       <class name="test.CreateJobsheet">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.CreateJobsheet@2af616d3]" started-at="2021-07-16T10:50:29Z" name="browserSetup" finished-at="2021-07-16T10:50:50Z" duration-ms="21261" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.CreateJobsheet@1af146]" started-at="2021-07-24T05:58:03Z" name="browserSetup" finished-at="2021-07-24T05:58:25Z" duration-ms="22315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="createJobsheet()[pri:0, instance:test.CreateJobsheet@2af616d3]" started-at="2021-07-16T10:50:50Z" name="createJobsheet" finished-at="2021-07-16T10:50:52Z" duration-ms="1430" status="PASS">
+        <test-method signature="createJobsheet()[pri:0, instance:test.CreateJobsheet@1af146]" started-at="2021-07-24T05:58:25Z" name="createJobsheet" finished-at="2021-07-24T05:58:25Z" duration-ms="171" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at test.CreateJobsheet.createJobsheet(CreateJobsheet.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createJobsheet -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.CreateJobsheet@2af616d3]" started-at="2021-07-16T10:50:52Z" name="tearDown" finished-at="2021-07-16T10:50:52Z" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.CreateJobsheet@1af146]" started-at="2021-07-24T05:58:25Z" name="tearDown" finished-at="2021-07-24T05:58:26Z" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.CreateJobsheet -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

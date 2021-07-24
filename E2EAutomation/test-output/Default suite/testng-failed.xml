@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.createJobsheet">
+      <class name="test.CreateJobsheet">
         <methods>
-          <include name="launcURL"/>
+          <include name="createJobsheet"/>
+          <include name="browserSetup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- test.createJobsheet -->
+      </class> <!-- test.CreateJobsheet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
